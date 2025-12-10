@@ -1,0 +1,166 @@
+.favorite-button-container {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+/* 主按鈕 */
+.favorite-button {
+  padding: 8px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.favorite-button:hover {
+  border-color: #ff6b6b;
+  background: #fff5f5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.2);
+}
+
+.favorite-button.favorited {
+  border-color: #ff6b6b;
+  background: #ffe0e0;
+  color: #d63031;
+}
+
+.favorite-button.favorited:hover {
+  background: #ffc9c9;
+}
+
+.favorite-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.favorite-button:active {
+  transform: translateY(0);
+}
+
+/* 提醒小徽章 */
+.reminder-badge {
+  font-size: 12px;
+  animation: ring 2s ease-in-out infinite;
+}
+
+@keyframes ring {
+  0%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(-10deg); }
+  20%, 40% { transform: rotate(10deg); }
+}
+
+/* 提醒選單按鈕 */
+.reminder-menu-button {
+  padding: 8px 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.reminder-menu-button:hover {
+  border-color: #667eea;
+  background: #f0f3ff;
+  transform: scale(1.1);
+}
+
+.reminder-menu-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 下拉選單 */
+.reminder-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 200px;
+  overflow: hidden;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reminder-menu-header {
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+}
+
+.reminder-menu button {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  transition: all 0.2s;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.reminder-menu button:last-child {
+  border-bottom: none;
+}
+
+.reminder-menu button:hover {
+  background: #f8f9fa;
+  padding-left: 20px;
+}
+
+.reminder-menu button.remove-reminder {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.reminder-menu button.remove-reminder:hover {
+  background: #fff5f5;
+}
+
+/* 響應式 */
+@media (max-width: 768px) {
+  .favorite-button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .reminder-menu-button {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+
+  .reminder-menu {
+    min-width: 180px;
+  }
+}

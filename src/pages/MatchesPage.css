@@ -1,0 +1,27 @@
+.matches-page {
+  padding: 20px;
+}
+
+.matches-header {
+  margin-bottom: 30px;
+}
+
+.matches-header h2 {
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 5px;
+  color: var(--primary-color);
+  margin: 0 0 10px 0;
+}
+
+.matches-subtitle {
+  color: #666;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+
+.match-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}

@@ -1,0 +1,14 @@
+.rules-page {
+  padding: 20px;
+}
+
+.ai-section {
+  margin-bottom: 40px;
+}
+
+.ai-section h2 {
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 5px;
+  color: var(--primary-color);
+  margin-top: 40px;
+}

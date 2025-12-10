@@ -1,0 +1,100 @@
+/* src/pages/FavoritesPage.css */
+
+.favorites-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.favorites-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.favorites-header h2 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 8px;
+}
+
+.favorites-subtitle {
+  color: #666;
+  font-size: 1em;
+}
+
+.favorites-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* 空狀態 */
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.empty-state h2 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 16px;
+}
+
+.empty-state p {
+  color: #666;
+  font-size: 1.1em;
+  margin-bottom: 24px;
+}
+
+.go-matches-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #39ff14 0%, #5eff47 100%);
+  color: #003366;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.go-matches-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(57, 255, 20, 0.3);
+}
+
+/* 載入中 */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 20px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #003366;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 響應式 */
+@media (max-width: 1199px) {
+  .favorites-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .favorites-list {
+    grid-template-columns: 1fr;
+  }
+}

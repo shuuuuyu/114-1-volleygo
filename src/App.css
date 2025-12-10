@@ -1,0 +1,24 @@
+:root {
+  --primary-color: #003366;
+  --accent-color: #39ff14;
+  --light-bg: #f4f4f4;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+}
+
+h2 {
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 5px;
+  color: var(--primary-color);
+  margin-top: 40px;
+}
