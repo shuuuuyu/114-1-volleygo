@@ -6,12 +6,13 @@
 
 ## 🔗 重要連結
 
-- 🌐 **線上展示**: [https://one14-1-volleygo.onrender.com/](https://one14-1-volleygo.onrender.com/) 
-- 🎬 **專題影片**: [YouTube 影片連結](#) *(影片製作中，即將上線)*
-- 🤖 **AI 後端**: [volleygo-api](https://github.com/shuuuuyu/114-1-volleygo-api)
-- [後端網址:https://one14-1-volleygo-api.onrender.com/docs](https://one14-1-volleygo-api.onrender.com/docs)
-- 🕷️ **自動爬蟲**: [volleygo-crawler](https://github.com/shuuuuyu/114-1-volleygo-crawler)
+[![Website](https://img.shields.io/badge/Website-線上展示-blue?style=for-the-badge&logo=google-chrome)](https://one14-1-volleygo.onrender.com/)
+[![API Docs](https://img.shields.io/badge/API-文檔-green?style=for-the-badge&logo=fastapi)](https://one14-1-volleygo-api.onrender.com/docs)
+[![YouTube](https://img.shields.io/badge/YouTube-專題影片-red?style=for-the-badge&logo=youtube)](https://youtube.com)
 
+**GitHub 專案**
+- 🤖 [AI 後端系統](https://github.com/shuuuuyu/114-1-volleygo-api)
+- 🕷️ [自動爬蟲系統](https://github.com/shuuuuyu/114-1-volleygo-crawler)
 ---
 ## 📖 專題簡介
 
