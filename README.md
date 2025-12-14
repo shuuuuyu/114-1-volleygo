@@ -7,7 +7,7 @@
 ## 🔗 重要連結
 
 - **專題網站**: [https://one14-1-volleygo.onrender.com/](https://one14-1-volleygo.onrender.com/)
-- 🎬 **專題影片**: [YouTube 影片連結](https://youtu.be/JvZHsMg0NoM)https://youtu.be/JvZHsMg0NoM
+- 🎬 **專題影片**: [YouTube 影片連結](https://youtu.be/JvZHsMg0NoM) or 複製連結 https://youtu.be/JvZHsMg0NoM
 - 🤖 **AI 後端**: [volleygo-api](https://github.com/shuuuuyu/114-1-volleygo-api)
   - **部署網址**: [https://one14-1-volleygo-api.onrender.com/docs](https://one14-1-volleygo-api.onrender.com/docs)
 - 🕷️ **自動爬蟲**: [volleygo-crawler](https://github.com/shuuuuyu/114-1-volleygo-crawler)
